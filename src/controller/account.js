@@ -38,7 +38,7 @@ export default ({ config, db }) => {
     
     // /v1/account/logout
     api.get('/logout', authenticate, (req, res) => {
-        res.logout
+        req.logout()
         res.status(200).send('Logout')
     })
 
