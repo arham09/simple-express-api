@@ -45,7 +45,7 @@ export default ({ config, db }) => {
         })
     })
 
-    // v1/type/:tokotype
+    // v1/type/:tokotype = tipe toko
     api.get('/type/:tokotype', (req, res) => {
         Toko.find({ tokotype: req.params.tokotype }, (err, toko) => {
             if (err) {
